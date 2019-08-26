@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "ViewTasks";
+}
+
+<h2>View Tasks</h2>
+
+@model IEnumerable<Task_List_Manager.Models.Task>
+
+<table class="table">
+    <tr>
+        <th>Task Description</th>
+        <th>Due Date</th>
+        <th>Completion Status</th>
+
+    </tr>
+    @foreach (var task in Model)
+    {
+        <tr>
+            <td>@task.TaskDescription</td>
+            <td>@task.DueDate</td>
+            <td>@task.TaskStatus</td>
+
+        </tr>
+    }
+
+</table>

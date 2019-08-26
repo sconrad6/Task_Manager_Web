@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Add New User";
+}
+
+@model IEnumerable<Task_List_Manager.Models.UserInformation>
+
+<h1>Add A New User</h1>
+
+<form action="/Tasks/AddNewUser" method="post">
+    <input type="text" name="email" placeholder="Email"/>
+    <input type="password" name="password" placeholder="Password"/>
+  
+    <input type="submit" value="Sign Up" />
+</form>
